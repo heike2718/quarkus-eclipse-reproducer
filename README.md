@@ -24,13 +24,13 @@ m2e - Maven Integration for Eclipse (includes Incubating components) 1.14.0.2019
 
 __Building the project locally__
 
-After cloning the repository run either inside eclipse or on the command line
+After cloning the repository, on the command line run
 
 	cd own-artifact
 	mvn install
 
 
-This installes a dependency for quarkus-eclipse-reproducer not deployed on maven central to your local repository
+This installes a dependency for quarkus-hello to your local repository
 
 __Check if quarkus-hello starts fine from the command line__
 
