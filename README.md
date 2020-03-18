@@ -1,30 +1,53 @@
 # quarkus-eclipse-reproducer project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+reproduce issue with quarkus-1.3.0-Final running in eclipse
 
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
+## Prerequisites
 
-## Running the application in dev mode
+__quarkus version__
 
-You can run your application in dev mode that enables live coding using:
-```
-./mvnw quarkus:dev
-```
+1.3.0.-Final
 
-## Packaging and running the application
+__Eclipse version__
 
-The application is packageable using `./mvnw package`.
-It produces the executable `quarkus-eclipse-reproducer-1.0.0-SNAPSHOT-runner.jar` file in `/target` directory.
-Be aware that it’s not an _über-jar_ as the dependencies are copied into the `target/lib` directory.
+Version: 2019-12 (4.14.0)
+Build id: 20191212-1212
 
-The application is now runnable using `java -jar target/quarkus-eclipse-reproducer-1.0.0-SNAPSHOT-runner.jar`.
+__maven version (embedded)__
 
-## Creating a native executable
+3.6.3/1.14.0.20191209-1923
 
-You can create a native executable using: `./mvnw package -Pnative`.
+__m2e__
 
-Or you can use Docker to build the native executable using: `./mvnw package -Pnative -Dquarkus.native.container-build=true`.
+m2e - Maven Integration for Eclipse (includes Incubating components) 1.14.0.20191209-1925
 
-You can then execute your binary: `./target/quarkus-eclipse-reproducer-1.0.0-SNAPSHOT-runner`
 
-If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image-guide .
+__Building the project locally__
+
+After cloning the repository run either inside eclipse or on the command line
+
+	cd own-artifact
+	mvn install
+
+
+This installes a dependency for quarkus-eclipse-reproducer not deployed on maven central to your local repository
+
+## Steps to reproduce
+
+Import quarkus-eclipse-reproducer into eclipse.
+
+Configure a new maven run configuration with goal
+
+	clean quarkus:dev
+
+Start this configuration
+
+## Error
+
+You will see the following [stack trace](./m2e-stacktrace.txt).
+
+Even though the dependency de.egladil.web:own-artifact:jar:1.0.0 is installed in the local repository quarkus will attempt to download this dependency from https://repo.maven.apache.org/maven2.
+
+Running in offline modus does not change this behaviour
+
+
