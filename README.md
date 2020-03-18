@@ -1,6 +1,6 @@
 # quarkus-eclipse-reproducer project
 
-reproduce issue with quarkus-1.3.0-Final running in eclipse
+reproduce [Issue #7932](https://github.com/quarkusio/quarkus/issues/7932) with quarkus-1.3.0-Final running in eclipse
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ __Check if quarkus-hello starts fine from the command line__
 
 ## Steps to reproduce
 
-Import quarkus-eclipse-reproducer into eclipse.
+Import quarkus-hello into eclipse.
 
 Configure a new maven run configuration with goal
 
