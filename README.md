@@ -1,6 +1,6 @@
 # quarkus-eclipse-reproducer project
 
-reproduce issue with quarkus-1.3.0-Final running in eclipse
+reproduce [Issue #7932](https://github.com/quarkusio/quarkus/issues/7932) with quarkus-1.3.0-Final running in eclipse
 
 ## Prerequisites
 
