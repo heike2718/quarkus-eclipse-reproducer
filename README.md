@@ -39,7 +39,7 @@ __Check if quarkus-hello starts fine from the command line__
 
 ## Steps to reproduce
 
-Import quarkus-eclipse-reproducer into eclipse.
+Import quarkus-hello into eclipse.
 
 Configure a new maven run configuration with goal
 
