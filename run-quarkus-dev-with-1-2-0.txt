@@ -1,0 +1,748 @@
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/EMBEDDED
+Java version: 11.0.2, vendor: Oracle Corporation, runtime: /usr/lib/jvm/jdk-11.0.2
+Default locale: de_DE, platform encoding: UTF-8
+OS name: "linux", version: "4.9.0-12-amd64", arch: "amd64", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.annotation.* < plexus.core
+[DEBUG]   Imported: javax.annotation.security.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.fusesource.jansi.* < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.event.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Message scheme: plain
+[DEBUG] Reading global settings from /home/heike/projekte/config/maven-2020-03/settings.xml
+[DEBUG] Reading user settings from /home/heike/projekte/config/maven-2020-03/settings.xml
+[DEBUG] Reading global toolchains from toolchains.xml
+[DEBUG] Reading user toolchains from /home/heike/.m2/toolchains.xml
+[DEBUG] Using local repository at /home/heike/projekte/repositories/mvn_repo_2020-03
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/heike/projekte/repositories/mvn_repo_2020-03
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project de.egladil.web:quarkus-eclipse-reproducer:jar:1.0.0-SNAPSHOT: (none)
+[DEBUG] Looking up lifecycle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] Resolving plugin prefix quarkus from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix quarkus to io.quarkus:quarkus-maven-plugin from POM de.egladil.web:quarkus-eclipse-reproducer:jar:1.0.0-SNAPSHOT
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: de.egladil.web:quarkus-eclipse-reproducer:jar:1.0.0-SNAPSHOT
+[DEBUG] Tasks:   [clean, quarkus:dev]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO] 
+[INFO] -------------< de.egladil.web:quarkus-eclipse-reproducer >--------------
+[INFO] Building quarkus-eclipse-reproducer 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Resolving plugin prefix quarkus from [org.apache.maven.plugins, org.codehaus.mojo]
+[DEBUG] Resolved plugin prefix quarkus to io.quarkus:quarkus-maven-plugin from POM de.egladil.web:quarkus-eclipse-reproducer:jar:1.0.0-SNAPSHOT
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       de.egladil.web:quarkus-eclipse-reproducer:1.0.0-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile+runtime]
+[DEBUG] Repositories (dependencies): [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          io.quarkus:quarkus-maven-plugin:1.2.0.Final:dev (default-cli)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildDir default-value="${project.build.directory}"/>
+  <debug default-value="${debug}"/>
+  <deleteDevJar default-value="TRUE"/>
+  <jvmArgs default-value="${jvm.args}"/>
+  <noDeps default-value="${noDeps}"/>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <preventnoverify default-value="${preventnoverify}"/>
+  <project default-value="${project}"/>
+  <repoSession default-value="${repositorySystemSession}"/>
+  <repos default-value="${project.remoteProjectRepositories}"/>
+  <session default-value="${session}"/>
+  <source default-value="${maven.compiler.source}"/>
+  <sourceDir default-value="${project.build.sourceDirectory}"/>
+  <suspend default-value="${suspend}"/>
+  <target default-value="${maven.compiler.target}"/>
+  <workingDir default-value="${project.build.directory}"/>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1812174, ConflictMarker.markTime=883708, ConflictMarker.nodeCount=435, ConflictIdSorter.graphTime=1136010, ConflictIdSorter.topsortTime=526363, ConflictIdSorter.conflictIdCount=135, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16047073, ConflictResolver.conflictItemCount=334, DefaultDependencyCollector.collectTime=578943024, DefaultDependencyCollector.transformTime=22782840}
+[DEBUG] de.egladil.web:quarkus-eclipse-reproducer:jar:1.0.0-SNAPSHOT
+[DEBUG]    de.egladil.web:own-artifact:jar:1.0.0:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.9:compile (version managed from 3.9)
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.29:compile (version managed from 1.7.25)
+[DEBUG]    io.quarkus:quarkus-resteasy:jar:1.2.0.Final:compile
+[DEBUG]       io.quarkus:quarkus-vertx-http:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]          io.quarkus.security:quarkus-security:jar:1.0.1.Final:compile (version managed from 1.0.1.Final)
+[DEBUG]          jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile (version managed from 2.0.2)
+[DEBUG]             jakarta.el:jakarta.el-api:jar:3.0.3:compile
+[DEBUG]             jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile (version managed from 1.2.5) (exclusions managed from [])
+[DEBUG]          io.quarkus:quarkus-vertx-core:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]             io.quarkus:quarkus-netty:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]                io.netty:netty-codec:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                io.netty:netty-handler:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]             io.vertx:vertx-core:jar:3.8.4:compile (version managed from 3.8.4)
+[DEBUG]                io.netty:netty-common:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                io.netty:netty-buffer:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                io.netty:netty-transport:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                io.netty:netty-handler-proxy:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                   io.netty:netty-codec-socks:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                io.netty:netty-codec-http:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                io.netty:netty-codec-http2:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                io.netty:netty-resolver:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                io.netty:netty-resolver-dns:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                   io.netty:netty-codec-dns:jar:4.1.42.Final:compile (version managed from 4.1.42.Final)
+[DEBUG]                com.fasterxml.jackson.core:jackson-core:jar:2.10.2:compile (version managed from 2.9.9)
+[DEBUG]          io.vertx:vertx-web:jar:3.8.4:compile (version managed from 3.8.4)
+[DEBUG]             io.vertx:vertx-web-common:jar:3.8.4:compile (version managed from 3.8.4)
+[DEBUG]             io.vertx:vertx-auth-common:jar:3.8.4:compile (version managed from 3.8.4)
+[DEBUG]             io.vertx:vertx-bridge-common:jar:3.8.4:compile (version managed from 3.8.4)
+[DEBUG]       io.quarkus:quarkus-resteasy-server-common:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]          io.quarkus:quarkus-arc:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]             io.quarkus.arc:arc:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]                jakarta.transaction:jakarta.transaction-api:jar:1.3.3:compile (version managed from 1.3.3)
+[DEBUG]             org.eclipse.microprofile.context-propagation:microprofile-context-propagation-api:jar:1.0.1:compile (version managed from 1.0.1)
+[DEBUG]          io.quarkus:quarkus-resteasy-common:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]             org.jboss.resteasy:resteasy-core:jar:4.4.2.Final:compile (version managed from 4.4.2.Final) (exclusions managed from [org.jboss.spec.javax.annotation:jboss-annotations-api_1.3_spec:*:*, javax.activation:activation:*:*])
+[DEBUG]                org.jboss.spec.javax.ws.rs:jboss-jaxrs-api_2.1_spec:jar:2.0.1.Final:compile (version managed from 2.0.1.Final)
+[DEBUG]                org.jboss.spec.javax.xml.bind:jboss-jaxb-api_2.3_spec:jar:2.0.0.Final:compile (version managed from 1.0.1.Final)
+[DEBUG]                org.jboss.resteasy:resteasy-core-spi:jar:4.4.2.Final:compile (version managed from 4.4.2.Final) (exclusions managed from [])
+[DEBUG]                org.reactivestreams:reactive-streams:jar:1.0.3:compile (version managed from 1.0.3) (exclusions managed from [])
+[DEBUG]                org.eclipse.microprofile.config:microprofile-config-api:jar:1.3:compile (version managed from 1.3) (exclusions managed from [])
+[DEBUG]             com.sun.activation:jakarta.activation:jar:1.2.1:compile (version managed from 1.2.1)
+[DEBUG]          jakarta.validation:jakarta.validation-api:jar:2.0.2:compile (version managed from 2.0.2)
+[DEBUG]    io.quarkus:quarkus-junit5:jar:1.2.0.Final:test
+[DEBUG]       io.quarkus:quarkus-bootstrap-core:jar:1.2.0.Final:test
+[DEBUG]          org.apache.maven:maven-embedder:jar:3.5.4:test
+[DEBUG]             org.apache.maven:maven-settings:jar:3.5.4:test
+[DEBUG]             org.apache.maven:maven-core:jar:3.5.4:test (version managed from 3.5.4)
+[DEBUG]                org.apache.maven:maven-artifact:jar:3.5.4:test
+[DEBUG]             org.apache.maven:maven-plugin-api:jar:3.5.4:test (version managed from 3.5.4)
+[DEBUG]             org.apache.maven:maven-model:jar:3.5.4:test (version managed from 3.5.4)
+[DEBUG]             org.apache.maven:maven-model-builder:jar:3.5.4:test
+[DEBUG]             org.apache.maven:maven-builder-support:jar:3.5.4:test
+[DEBUG]             org.apache.maven.resolver:maven-resolver-api:jar:1.1.1:test
+[DEBUG]             org.apache.maven.resolver:maven-resolver-util:jar:1.1.1:test
+[DEBUG]             org.apache.maven.shared:maven-shared-utils:jar:3.2.1:test
+[DEBUG]                commons-io:commons-io:jar:2.6:test (version managed from 2.5)
+[DEBUG]             com.google.inject:guice:jar:no_aop:4.2.0:test
+[DEBUG]                aopalliance:aopalliance:jar:1.0:test
+[DEBUG]             com.google.guava:guava:jar:27.0.1-jre:test (version managed from 20.0)
+[DEBUG]                com.google.guava:failureaccess:jar:1.0.1:test
+[DEBUG]                com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:test
+[DEBUG]                com.google.code.findbugs:jsr305:jar:3.0.2:test
+[DEBUG]                org.checkerframework:checker-qual:jar:2.5.2:test (version managed from 2.5.2)
+[DEBUG]                com.google.errorprone:error_prone_annotations:jar:2.2.0:test (version managed from 2.2.0)
+[DEBUG]                com.google.j2objc:j2objc-annotations:jar:1.1:test
+[DEBUG]                org.codehaus.mojo:animal-sniffer-annotations:jar:1.17:test
+[DEBUG]             org.codehaus.plexus:plexus-utils:jar:3.0.24:test (version managed from 3.1.0)
+[DEBUG]             org.codehaus.plexus:plexus-classworlds:jar:2.5.2:test
+[DEBUG]             org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3:test
+[DEBUG]             org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:test (version managed from 1.7.1)
+[DEBUG]             commons-cli:commons-cli:jar:1.4:test
+[DEBUG]          org.apache.maven:maven-settings-builder:jar:3.5.4:test (version managed from 3.5.4)
+[DEBUG]             org.codehaus.plexus:plexus-interpolation:jar:1.24:test
+[DEBUG]             org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4:test
+[DEBUG]                org.sonatype.plexus:plexus-cipher:jar:1.4:test
+[DEBUG]          org.apache.maven:maven-resolver-provider:jar:3.5.4:test (version managed from 3.5.4)
+[DEBUG]             org.apache.maven:maven-repository-metadata:jar:3.5.4:test
+[DEBUG]             org.apache.maven.resolver:maven-resolver-spi:jar:1.1.1:test
+[DEBUG]             org.apache.maven.resolver:maven-resolver-impl:jar:1.1.1:test
+[DEBUG]          org.apache.maven.resolver:maven-resolver-connector-basic:jar:1.1.1:test (version managed from 1.1.1)
+[DEBUG]          org.apache.maven.resolver:maven-resolver-transport-wagon:jar:1.1.1:test
+[DEBUG]             org.apache.maven.wagon:wagon-provider-api:jar:3.0.0:test
+[DEBUG]          org.apache.maven.wagon:wagon-http:jar:3.0.0:test
+[DEBUG]             org.apache.maven.wagon:wagon-http-shared:jar:3.0.0:test
+[DEBUG]                org.jsoup:jsoup:jar:1.7.2:test
+[DEBUG]          org.apache.maven.wagon:wagon-file:jar:3.0.0:test
+[DEBUG]          org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile (version managed from 3.3.2.Final)
+[DEBUG]          org.jboss.logging:commons-logging-jboss-logging:jar:1.0.0.Final:test (version managed from 1.0.0.Final)
+[DEBUG]       io.quarkus:quarkus-test-common:jar:1.2.0.Final:test
+[DEBUG]          io.quarkus:quarkus-core-deployment:jar:1.2.0.Final:test
+[DEBUG]             io.quarkus.gizmo:gizmo:jar:1.0.1.Final:test (version managed from 1.0.1.Final)
+[DEBUG]                org.ow2.asm:asm-util:jar:7.1:test
+[DEBUG]                   org.ow2.asm:asm-tree:jar:7.1:test (version managed from 7.1)
+[DEBUG]                   org.ow2.asm:asm-analysis:jar:7.1:test (version managed from 7.1)
+[DEBUG]             org.ow2.asm:asm:jar:7.1:test (version managed from 7.1)
+[DEBUG]             io.quarkus:quarkus-builder:jar:1.2.0.Final:test
+[DEBUG]          io.quarkus:quarkus-jsonp-deployment:jar:1.2.0.Final:test
+[DEBUG]             io.quarkus:quarkus-jsonp:jar:1.2.0.Final:test (version managed from 1.2.0.Final)
+[DEBUG]                org.glassfish:jakarta.json:jar:1.1.6:test (version managed from 1.1.6)
+[DEBUG]          org.jboss:jandex:jar:2.1.2.Final:test (version managed from 2.1.2.Final)
+[DEBUG]       org.junit.jupiter:junit-jupiter:jar:5.5.2:test (version managed from 5.5.2)
+[DEBUG]          org.junit.jupiter:junit-jupiter-api:jar:5.5.2:test (version managed from 5.5.2)
+[DEBUG]             org.apiguardian:apiguardian-api:jar:1.1.0:test
+[DEBUG]             org.opentest4j:opentest4j:jar:1.2.0:test
+[DEBUG]             org.junit.platform:junit-platform-commons:jar:1.5.2:test (version managed from 1.5.2)
+[DEBUG]          org.junit.jupiter:junit-jupiter-params:jar:5.5.2:test (version managed from 5.5.2)
+[DEBUG]          org.junit.jupiter:junit-jupiter-engine:jar:5.5.2:test (version managed from 5.5.2)
+[DEBUG]             org.junit.platform:junit-platform-engine:jar:1.5.2:test (version managed from 1.5.2)
+[DEBUG]       io.quarkus:quarkus-core:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]          jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile (version managed from 1.3.5)
+[DEBUG]          jakarta.inject:jakarta.inject-api:jar:1.0:compile (version managed from 1.0)
+[DEBUG]          io.smallrye.config:smallrye-config:jar:1.5.1:compile (version managed from 1.5.1) (exclusions managed from [javax.enterprise:cdi-api:*:*, javax.annotation:javax.annotation-api:*:*])
+[DEBUG]             io.smallrye.config:smallrye-config-common:jar:1.5.1:compile (version managed from 1.5.1)
+[DEBUG]          org.jboss.logmanager:jboss-logmanager-embedded:jar:1.0.4:compile (version managed from 1.0.4) (exclusions managed from [com.oracle.substratevm:svm:*:*, org.jboss.modules:jboss-modules:*:*, org.glassfish:javax.json:*:*])
+[DEBUG]          org.jboss.logging:jboss-logging-annotations:jar:2.1.0.Final:compile (version managed from 2.1.0.Final)
+[DEBUG]          org.jboss.threads:jboss-threads:jar:3.0.0.Final:compile (version managed from 3.0.0.Final)
+[DEBUG]          org.jboss.slf4j:slf4j-jboss-logging:jar:1.2.0.Final:compile (version managed from 1.2.0.Final)
+[DEBUG]          org.graalvm.sdk:graal-sdk:jar:19.2.1:compile (version managed from 19.2.1)
+[DEBUG]          org.wildfly.common:wildfly-common:jar:1.5.0.Final-format-001:compile (version managed from 1.5.0.Final-format-001)
+[DEBUG]    io.rest-assured:rest-assured:jar:4.1.2:test (exclusions managed from [javax.activation:activation:*:*, javax.activation:javax.activation-api:*:*, com.sun.xml.bind:jaxb-osgi:*:*, commons-logging:commons-logging:*:*])
+[DEBUG]       org.codehaus.groovy:groovy:jar:2.5.8:test
+[DEBUG]       org.codehaus.groovy:groovy-xml:jar:2.5.8:test
+[DEBUG]       org.apache.httpcomponents:httpclient:jar:4.5.10:test (version managed from 4.5.3)
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.4.13:test (version managed from 4.4.12)
+[DEBUG]          commons-codec:commons-codec:jar:1.13:test (version managed from 1.11)
+[DEBUG]       org.apache.httpcomponents:httpmime:jar:4.5.3:test
+[DEBUG]       org.hamcrest:hamcrest:jar:2.1:test
+[DEBUG]       org.ccil.cowan.tagsoup:tagsoup:jar:1.2.1:test
+[DEBUG]       io.rest-assured:json-path:jar:4.1.2:test
+[DEBUG]          org.codehaus.groovy:groovy-json:jar:2.5.8:test
+[DEBUG]          io.rest-assured:rest-assured-common:jar:4.1.2:test
+[DEBUG]       io.rest-assured:xml-path:jar:4.1.2:test
+[DEBUG]          javax.xml.bind:jaxb-api:jar:2.3.1:test (version managed from 2.3.1)
+[DEBUG]          org.apache.sling:org.apache.sling.javax.activation:jar:0.1.0:test
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ quarkus-eclipse-reproducer ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=118909, ConflictMarker.markTime=86641, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=51251, ConflictIdSorter.topsortTime=11074, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=106662, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=6592572, DefaultDependencyCollector.transformTime=430323}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes
+[DEBUG]   (f) reportDirectory = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/maven-status/maven-compiler-plugin/compile/null/inputFiles.lst
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/maven-status/maven-compiler-plugin/compile/null/createdFiles.lst
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/maven-status/maven-compiler-plugin/compile/null
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/maven-status
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/test-classes/de/egladil/web/NativeExampleResourceIT.class
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/test-classes/de/egladil/web/ExampleResourceTest.class
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/test-classes/de/egladil/web
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/test-classes/de/egladil
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/test-classes/de
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/test-classes
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/generated-sources/annotations
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/generated-sources
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF/resources/index.html
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF/resources
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF/maven/de.egladil.web/quarkus-eclipse-reproducer/pom.properties
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF/maven/de.egladil.web/quarkus-eclipse-reproducer/pom.xml
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF/maven/de.egladil.web/quarkus-eclipse-reproducer
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF/maven/de.egladil.web
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF/maven
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF/MANIFEST.MF
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/META-INF
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/application.properties
+[INFO] Deleting file /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/de/egladil/web/ExampleResource.class
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/de/egladil/web
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/de/egladil
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes/de
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/wiring-devmode
+[INFO] Deleting directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target
+[DEBUG] Skipping non-existing directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes
+[DEBUG] Skipping non-existing directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/test-classes
+[DEBUG] Skipping non-existing directory /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/site
+[INFO] 
+[INFO] --- quarkus-maven-plugin:1.2.0.Final:dev (default-cli) @ quarkus-eclipse-reproducer ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=742099, ConflictMarker.markTime=493673, ConflictMarker.nodeCount=701, ConflictIdSorter.graphTime=225029, ConflictIdSorter.topsortTime=116807, ConflictIdSorter.conflictIdCount=111, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=6345648, ConflictResolver.conflictItemCount=255, DefaultDependencyCollector.collectTime=115443083, DefaultDependencyCollector.transformTime=7991084}
+[DEBUG] io.quarkus:quarkus-maven-plugin:jar:1.2.0.Final
+[DEBUG]    io.quarkus:quarkus-bootstrap-core:jar:1.2.0.Final:compile
+[DEBUG]       org.apache.maven:maven-embedder:jar:3.5.4:compile
+[DEBUG]          commons-cli:commons-cli:jar:1.4:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.5.4:compile (version managed from default)
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.24:compile
+[DEBUG]          org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4:compile
+[DEBUG]             org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]       org.apache.maven:maven-resolver-provider:jar:3.5.4:compile (version managed from default)
+[DEBUG]       org.apache.maven.resolver:maven-resolver-connector-basic:jar:1.1.1:compile (version managed from default)
+[DEBUG]       org.apache.maven.resolver:maven-resolver-transport-wagon:jar:1.1.1:compile
+[DEBUG]          org.apache.maven.wagon:wagon-provider-api:jar:3.3.3:compile (version managed from default)
+[DEBUG]       org.apache.maven.wagon:wagon-http:jar:3.0.0:compile
+[DEBUG]          org.apache.maven.wagon:wagon-http-shared:jar:3.0.0:compile
+[DEBUG]             org.jsoup:jsoup:jar:1.11.3:compile (version managed from default)
+[DEBUG]          org.apache.httpcomponents:httpclient:jar:4.5.10:compile (version managed from default)
+[DEBUG]             commons-codec:commons-codec:jar:1.13:compile (version managed from default)
+[DEBUG]          org.apache.httpcomponents:httpcore:jar:4.4.13:compile (version managed from default)
+[DEBUG]       org.apache.maven.wagon:wagon-file:jar:3.0.0:compile
+[DEBUG]       org.jboss.logging:jboss-logging:jar:3.3.2.Final:compile (version managed from default)
+[DEBUG]       org.jboss.logging:commons-logging-jboss-logging:jar:1.0.0.Final:runtime (version managed from default)
+[DEBUG]    io.quarkus:quarkus-platform-descriptor-json:jar:1.2.0.Final:compile
+[DEBUG]       io.quarkus:quarkus-devtools-common:jar:1.2.0.Final:compile (version managed from default)
+[DEBUG]          io.quarkus:quarkus-platform-descriptor-api:jar:1.2.0.Final:compile (version managed from default)
+[DEBUG]          io.quarkus.http:quarkus-http-websockets-jsr:jar:3.0.1.Final:compile (version managed from default) (exclusions managed from default)
+[DEBUG]             io.quarkus.http:quarkus-http-core:jar:3.0.1.Final:compile (version managed from default)
+[DEBUG]                io.quarkus.http:quarkus-http-http-core:jar:3.0.1.Final:compile
+[DEBUG]                   io.netty:netty-buffer:jar:4.1.42.Final:compile (version managed from default)
+[DEBUG]                io.netty:netty-codec-http:jar:4.1.42.Final:compile (version managed from default)
+[DEBUG]                   io.netty:netty-common:jar:4.1.42.Final:compile (version managed from default)
+[DEBUG]                   io.netty:netty-transport:jar:4.1.42.Final:compile (version managed from default)
+[DEBUG]                      io.netty:netty-resolver:jar:4.1.42.Final:compile (version managed from default)
+[DEBUG]                   io.netty:netty-codec:jar:4.1.42.Final:compile (version managed from default)
+[DEBUG]                   io.netty:netty-handler:jar:4.1.42.Final:compile (version managed from default)
+[DEBUG]             io.quarkus.http:quarkus-http-servlet:jar:3.0.1.Final:compile (version managed from default) (exclusions managed from default)
+[DEBUG]          jakarta.servlet:jakarta.servlet-api:jar:4.0.3:compile (version managed from default)
+[DEBUG]          jakarta.websocket:jakarta.websocket-api:jar:1.1.2:compile (version managed from default)
+[DEBUG]       io.quarkus:quarkus-bom-descriptor-json:json:1.2.0.Final:compile
+[DEBUG]    io.quarkus:quarkus-platform-descriptor-resolver-json:jar:1.2.0.Final:compile
+[DEBUG]       com.eclipsesource.minimal-json:minimal-json:jar:0.9.5:compile
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.5.4:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.5.4:compile (version managed from default)
+[DEBUG]       org.apache.maven:maven-artifact:jar:3.5.4:compile
+[DEBUG]       org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.0.24:compile (version managed from default)
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.5.2:compile
+[DEBUG]    jakarta.inject:jakarta.inject-api:jar:1.0:compile
+[DEBUG]    jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2:compile
+[DEBUG]       jakarta.el:jakarta.el-api:jar:3.0.3:compile
+[DEBUG]       jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5:compile (version managed from default) (exclusions managed from default)
+[DEBUG]          jakarta.annotation:jakarta.annotation-api:jar:1.3.5:compile (version managed from default)
+[DEBUG]    org.apache.maven:maven-core:jar:3.5.4:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.5.4:compile
+[DEBUG]       org.apache.maven:maven-builder-support:jar:3.5.4:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.5.4:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.5.4:compile
+[DEBUG]       org.apache.maven.resolver:maven-resolver-impl:jar:1.1.1:compile
+[DEBUG]       org.apache.maven.resolver:maven-resolver-api:jar:1.1.1:compile
+[DEBUG]       org.apache.maven.resolver:maven-resolver-spi:jar:1.1.1:compile
+[DEBUG]       org.apache.maven.resolver:maven-resolver-util:jar:1.1.1:compile
+[DEBUG]       org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG]          commons-io:commons-io:jar:2.6:compile (version managed from default)
+[DEBUG]       org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.3:compile
+[DEBUG]       com.google.inject:guice:jar:no_aop:4.2.0:compile
+[DEBUG]          aopalliance:aopalliance:jar:1.0:compile
+[DEBUG]       com.google.guava:guava:jar:27.0.1-jre:compile (version managed from default)
+[DEBUG]          com.google.guava:failureaccess:jar:1.0.1:compile
+[DEBUG]          com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:compile
+[DEBUG]          com.google.code.findbugs:jsr305:jar:3.0.2:compile (version managed from default)
+[DEBUG]          org.checkerframework:checker-qual:jar:2.5.2:compile (version managed from default)
+[DEBUG]          com.google.errorprone:error_prone_annotations:jar:2.2.0:compile (version managed from default)
+[DEBUG]          com.google.j2objc:j2objc-annotations:jar:1.1:compile
+[DEBUG]          org.codehaus.mojo:animal-sniffer-annotations:jar:1.17:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile (version managed from default)
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.9:compile (version managed from default)
+[DEBUG]    io.quarkus:quarkus-creator:jar:1.2.0.Final:compile
+[DEBUG]       io.quarkus:quarkus-core-deployment:jar:1.2.0.Final:compile (version managed from default)
+[DEBUG]          org.wildfly.common:wildfly-common:jar:1.5.0.Final-format-001:compile (version managed from default)
+[DEBUG]          io.quarkus.gizmo:gizmo:jar:1.0.1.Final:compile (version managed from default)
+[DEBUG]             org.ow2.asm:asm-util:jar:7.1:compile
+[DEBUG]                org.ow2.asm:asm-tree:jar:7.1:compile (version managed from default)
+[DEBUG]                org.ow2.asm:asm-analysis:jar:7.1:compile (version managed from default)
+[DEBUG]          org.jboss:jandex:jar:2.1.2.Final:compile (version managed from default)
+[DEBUG]          org.ow2.asm:asm:jar:7.1:compile (version managed from default)
+[DEBUG]          io.quarkus:quarkus-core:jar:1.2.0.Final:compile (version managed from default)
+[DEBUG]             io.smallrye.config:smallrye-config:jar:1.5.1:compile (version managed from default) (exclusions managed from default)
+[DEBUG]                io.smallrye.config:smallrye-config-common:jar:1.5.1:compile (version managed from default)
+[DEBUG]                   org.eclipse.microprofile.config:microprofile-config-api:jar:1.3:compile (version managed from default) (exclusions managed from default)
+[DEBUG]             org.jboss.logging:jboss-logging-annotations:jar:2.1.0.Final:compile (version managed from default)
+[DEBUG]             org.jboss.threads:jboss-threads:jar:3.0.0.Final:compile (version managed from default)
+[DEBUG]          io.quarkus:quarkus-builder:jar:1.2.0.Final:compile (version managed from default)
+[DEBUG]          org.graalvm.sdk:graal-sdk:jar:19.2.1:compile (version managed from default)
+[DEBUG]    io.quarkus:quarkus-development-mode:jar:1.2.0.Final:compile
+[DEBUG]       org.jboss.logmanager:jboss-logmanager-embedded:jar:1.0.4:compile (version managed from default) (exclusions managed from default)
+[DEBUG]    org.apache.maven.shared:maven-artifact-transfer:jar:0.10.0:compile (exclusions managed from default)
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]                org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]       org.slf4j:slf4j-api:jar:1.7.29:compile (version managed from default)
+[DEBUG]    jline:jline:jar:2.14.6:compile
+[DEBUG]    org.freemarker:freemarker:jar:2.3.29:compile
+[DEBUG]    org.glassfish:jakarta.json:jar:1.1.6:compile
+[DEBUG]    com.fasterxml.jackson.core:jackson-databind:jar:2.10.2:compile
+[DEBUG]       com.fasterxml.jackson.core:jackson-annotations:jar:2.10.2:compile (version managed from default)
+[DEBUG]       com.fasterxml.jackson.core:jackson-core:jar:2.10.2:compile (version managed from default)
+[DEBUG]    org.twdata.maven:mojo-executor:jar:2.3.0:compile
+[DEBUG]    org.jboss.slf4j:slf4j-jboss-logging:jar:1.2.0.Final:compile
+[DEBUG] Created new class realm plugin>io.quarkus:quarkus-maven-plugin:1.2.0.Final
+[DEBUG] Importing foreign packages into class realm plugin>io.quarkus:quarkus-maven-plugin:1.2.0.Final
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>io.quarkus:quarkus-maven-plugin:1.2.0.Final
+[DEBUG]   Included: io.quarkus:quarkus-maven-plugin:jar:1.2.0.Final
+[DEBUG]   Included: io.quarkus:quarkus-bootstrap-core:jar:1.2.0.Final
+[DEBUG]   Included: org.apache.maven:maven-embedder:jar:3.5.4
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.24
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.resolver:maven-resolver-connector-basic:jar:1.1.1
+[DEBUG]   Included: org.apache.maven.resolver:maven-resolver-transport-wagon:jar:1.1.1
+[DEBUG]   Included: org.apache.maven.wagon:wagon-http:jar:3.0.0
+[DEBUG]   Included: org.apache.maven.wagon:wagon-http-shared:jar:3.0.0
+[DEBUG]   Included: org.jsoup:jsoup:jar:1.11.3
+[DEBUG]   Included: org.apache.httpcomponents:httpclient:jar:4.5.10
+[DEBUG]   Included: commons-codec:commons-codec:jar:1.13
+[DEBUG]   Included: org.apache.httpcomponents:httpcore:jar:4.4.13
+[DEBUG]   Included: org.apache.maven.wagon:wagon-file:jar:3.0.0
+[DEBUG]   Included: org.jboss.logging:jboss-logging:jar:3.3.2.Final
+[DEBUG]   Included: org.jboss.logging:commons-logging-jboss-logging:jar:1.0.0.Final
+[DEBUG]   Included: io.quarkus:quarkus-platform-descriptor-json:jar:1.2.0.Final
+[DEBUG]   Included: io.quarkus:quarkus-devtools-common:jar:1.2.0.Final
+[DEBUG]   Included: io.quarkus:quarkus-platform-descriptor-api:jar:1.2.0.Final
+[DEBUG]   Included: io.quarkus.http:quarkus-http-websockets-jsr:jar:3.0.1.Final
+[DEBUG]   Included: io.quarkus.http:quarkus-http-core:jar:3.0.1.Final
+[DEBUG]   Included: io.quarkus.http:quarkus-http-http-core:jar:3.0.1.Final
+[DEBUG]   Included: io.netty:netty-buffer:jar:4.1.42.Final
+[DEBUG]   Included: io.netty:netty-codec-http:jar:4.1.42.Final
+[DEBUG]   Included: io.netty:netty-common:jar:4.1.42.Final
+[DEBUG]   Included: io.netty:netty-transport:jar:4.1.42.Final
+[DEBUG]   Included: io.netty:netty-resolver:jar:4.1.42.Final
+[DEBUG]   Included: io.netty:netty-codec:jar:4.1.42.Final
+[DEBUG]   Included: io.netty:netty-handler:jar:4.1.42.Final
+[DEBUG]   Included: io.quarkus.http:quarkus-http-servlet:jar:3.0.1.Final
+[DEBUG]   Included: jakarta.servlet:jakarta.servlet-api:jar:4.0.3
+[DEBUG]   Included: jakarta.websocket:jakarta.websocket-api:jar:1.1.2
+[DEBUG]   Included: io.quarkus:quarkus-bom-descriptor-json:json:1.2.0.Final
+[DEBUG]   Included: io.quarkus:quarkus-platform-descriptor-resolver-json:jar:1.2.0.Final
+[DEBUG]   Included: com.eclipsesource.minimal-json:minimal-json:jar:0.9.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.24
+[DEBUG]   Included: jakarta.inject:jakarta.inject-api:jar:1.0
+[DEBUG]   Included: jakarta.enterprise:jakarta.enterprise.cdi-api:jar:2.0.2
+[DEBUG]   Included: jakarta.el:jakarta.el-api:jar:3.0.3
+[DEBUG]   Included: jakarta.interceptor:jakarta.interceptor-api:jar:1.2.5
+[DEBUG]   Included: jakarta.annotation:jakarta.annotation-api:jar:1.3.5
+[DEBUG]   Included: org.apache.maven:maven-builder-support:jar:3.5.4
+[DEBUG]   Included: org.apache.maven.resolver:maven-resolver-util:jar:1.1.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.6
+[DEBUG]   Included: org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.3
+[DEBUG]   Included: com.google.inject:guice:jar:no_aop:4.2.0
+[DEBUG]   Included: aopalliance:aopalliance:jar:1.0
+[DEBUG]   Included: com.google.guava:guava:jar:27.0.1-jre
+[DEBUG]   Included: com.google.guava:failureaccess:jar:1.0.1
+[DEBUG]   Included: com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:3.0.2
+[DEBUG]   Included: org.checkerframework:checker-qual:jar:2.5.2
+[DEBUG]   Included: com.google.errorprone:error_prone_annotations:jar:2.2.0
+[DEBUG]   Included: com.google.j2objc:j2objc-annotations:jar:1.1
+[DEBUG]   Included: org.codehaus.mojo:animal-sniffer-annotations:jar:1.17
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.9
+[DEBUG]   Included: io.quarkus:quarkus-creator:jar:1.2.0.Final
+[DEBUG]   Included: io.quarkus:quarkus-core-deployment:jar:1.2.0.Final
+[DEBUG]   Included: org.wildfly.common:wildfly-common:jar:1.5.0.Final-format-001
+[DEBUG]   Included: io.quarkus.gizmo:gizmo:jar:1.0.1.Final
+[DEBUG]   Included: org.ow2.asm:asm-util:jar:7.1
+[DEBUG]   Included: org.ow2.asm:asm-tree:jar:7.1
+[DEBUG]   Included: org.ow2.asm:asm-analysis:jar:7.1
+[DEBUG]   Included: org.jboss:jandex:jar:2.1.2.Final
+[DEBUG]   Included: org.ow2.asm:asm:jar:7.1
+[DEBUG]   Included: io.quarkus:quarkus-core:jar:1.2.0.Final
+[DEBUG]   Included: io.smallrye.config:smallrye-config:jar:1.5.1
+[DEBUG]   Included: io.smallrye.config:smallrye-config-common:jar:1.5.1
+[DEBUG]   Included: org.eclipse.microprofile.config:microprofile-config-api:jar:1.3
+[DEBUG]   Included: org.jboss.logging:jboss-logging-annotations:jar:2.1.0.Final
+[DEBUG]   Included: org.jboss.threads:jboss-threads:jar:3.0.0.Final
+[DEBUG]   Included: io.quarkus:quarkus-builder:jar:1.2.0.Final
+[DEBUG]   Included: org.graalvm.sdk:graal-sdk:jar:19.2.1
+[DEBUG]   Included: io.quarkus:quarkus-development-mode:jar:1.2.0.Final
+[DEBUG]   Included: org.jboss.logmanager:jboss-logmanager-embedded:jar:1.0.4
+[DEBUG]   Included: org.apache.maven.shared:maven-artifact-transfer:jar:0.10.0
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:3.0.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: jline:jline:jar:2.14.6
+[DEBUG]   Included: org.freemarker:freemarker:jar:2.3.29
+[DEBUG]   Included: org.glassfish:jakarta.json:jar:1.1.6
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-databind:jar:2.10.2
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-annotations:jar:2.10.2
+[DEBUG]   Included: com.fasterxml.jackson.core:jackson-core:jar:2.10.2
+[DEBUG]   Included: org.twdata.maven:mojo-executor:jar:2.3.0
+[DEBUG]   Included: org.jboss.slf4j:slf4j-jboss-logging:jar:1.2.0.Final
+[DEBUG] Configuring mojo io.quarkus:quarkus-maven-plugin:1.2.0.Final:dev from plugin realm ClassRealm[plugin>io.quarkus:quarkus-maven-plugin:1.2.0.Final, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29]
+[DEBUG] Configuring mojo 'io.quarkus:quarkus-maven-plugin:1.2.0.Final:dev' with basic configurator -->
+[DEBUG]   (f) buildDir = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target
+[DEBUG]   (f) deleteDevJar = true
+[DEBUG]   (f) outputDirectory = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes
+[DEBUG]   (f) project = MavenProject: de.egladil.web:quarkus-eclipse-reproducer:1.0.0-SNAPSHOT @ /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/pom.xml
+[DEBUG]   (f) repoSession = org.eclipse.aether.DefaultRepositorySystemSession@1db7157f
+[DEBUG]   (f) repos = [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@75e27856
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) sourceDir = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/src/main/java
+[DEBUG]   (f) target = 1.8
+[DEBUG]   (f) workingDir = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target
+[DEBUG] -- end configuration --
+[DEBUG] Detected Maven Version: 3.6.3
+[DEBUG] Detected Maven Version (3.6.3)  is allowed in [3.5.3,).
+[DEBUG] Running executeMojo for Plugin [org.apache.maven.plugins:maven-compiler-plugin]
+[DEBUG] Attempting to load plugin Plugin [org.apache.maven.plugins:maven-compiler-plugin] using pluginManager org.apache.maven.plugin.DefaultBuildPluginManager@30839e44 and repositories [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=153622, ConflictMarker.markTime=56225, ConflictMarker.nodeCount=118, ConflictIdSorter.graphTime=57508, ConflictIdSorter.topsortTime=81220, ConflictIdSorter.conflictIdCount=45, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1430471, ConflictResolver.conflictItemCount=72, DefaultDependencyCollector.collectTime=101111044, DefaultDependencyCollector.transformTime=1828096}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.1
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model:jar:3.0:compile
+[DEBUG]       org.sonatype.sisu:sisu-inject-plexus:jar:1.4.2:compile
+[DEBUG]          org.sonatype.sisu:sisu-inject-bean:jar:1.4.2:compile
+[DEBUG]             org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:3.0:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:2.0.4:compile
+[DEBUG]    org.apache.maven:maven-core:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-settings-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-model-builder:jar:3.0:compile
+[DEBUG]       org.apache.maven:maven-aether-provider:jar:3.0:runtime
+[DEBUG]       org.sonatype.aether:aether-impl:jar:1.7:compile
+[DEBUG]          org.sonatype.aether:aether-spi:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-api:jar:1.7:compile
+[DEBUG]       org.sonatype.aether:aether-util:jar:1.7:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.14:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.3:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.7.1:compile (version managed from default)
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:3.2.1:compile
+[DEBUG]       commons-io:commons-io:jar:2.5:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-java:jar:0.9.10:compile
+[DEBUG]       org.ow2.asm:asm:jar:6.2:compile
+[DEBUG]       com.thoughtworks.qdox:qdox:jar:2.0-M9:compile (version managed from default)
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.8.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4:runtime
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.8.1
+[DEBUG]   Included: org.sonatype.sisu:sisu-inject-bean:jar:1.4.2
+[DEBUG]   Included: org.sonatype.sisu:sisu-guice:jar:noaop:2.1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.4
+[DEBUG]   Included: org.sonatype.aether:aether-util:jar:1.7
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.14
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.7.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:3.2.1
+[DEBUG]   Included: commons-io:commons-io:jar:2.5
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-java:jar:0.9.10
+[DEBUG]   Included: org.ow2.asm:asm:jar:6.2
+[DEBUG]   Included: com.thoughtworks.qdox:qdox:jar:2.0-M9
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.8.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.8.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.8.4
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.8.1, parent: jdk.internal.loader.ClassLoaders$AppClassLoader@799f7e29]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello
+[DEBUG]   (f) buildDirectory = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target
+[DEBUG]   (f) compilePath = [/home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes, /home/heike/projekte/repositories/mvn_repo_2020-03/de/egladil/web/own-artifact/1.0.0/own-artifact-1.0.0.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/slf4j/slf4j-api/1.7.29/slf4j-api-1.7.29.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy/1.2.0.Final/quarkus-resteasy-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-vertx-http/1.2.0.Final/quarkus-vertx-http-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/security/quarkus-security/1.0.1.Final/quarkus-security-1.0.1.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/enterprise/jakarta.enterprise.cdi-api/2.0.2/jakarta.enterprise.cdi-api-2.0.2.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/el/jakarta.el-api/3.0.3/jakarta.el-api-3.0.3.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/interceptor/jakarta.interceptor-api/1.2.5/jakarta.interceptor-api-1.2.5.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-vertx-core/1.2.0.Final/quarkus-vertx-core-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-netty/1.2.0.Final/quarkus-netty-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec/4.1.42.Final/netty-codec-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-handler/4.1.42.Final/netty-handler-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-core/3.8.4/vertx-core-3.8.4.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-common/4.1.42.Final/netty-common-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-buffer/4.1.42.Final/netty-buffer-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-transport/4.1.42.Final/netty-transport-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-handler-proxy/4.1.42.Final/netty-handler-proxy-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-socks/4.1.42.Final/netty-codec-socks-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-http/4.1.42.Final/netty-codec-http-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-http2/4.1.42.Final/netty-codec-http2-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-resolver/4.1.42.Final/netty-resolver-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-resolver-dns/4.1.42.Final/netty-resolver-dns-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-dns/4.1.42.Final/netty-codec-dns-4.1.42.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/com/fasterxml/jackson/core/jackson-core/2.10.2/jackson-core-2.10.2.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-web/3.8.4/vertx-web-3.8.4.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-web-common/3.8.4/vertx-web-common-3.8.4.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-auth-common/3.8.4/vertx-auth-common-3.8.4.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-bridge-common/3.8.4/vertx-bridge-common-3.8.4.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy-server-common/1.2.0.Final/quarkus-resteasy-server-common-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-arc/1.2.0.Final/quarkus-arc-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/arc/arc/1.2.0.Final/arc-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/eclipse/microprofile/context-propagation/microprofile-context-propagation-api/1.0.1/microprofile-context-propagation-api-1.0.1.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy-common/1.2.0.Final/quarkus-resteasy-common-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/resteasy/resteasy-core/4.4.2.Final/resteasy-core-4.4.2.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/2.0.1.Final/jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/spec/javax/xml/bind/jboss-jaxb-api_2.3_spec/2.0.0.Final/jboss-jaxb-api_2.3_spec-2.0.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/resteasy/resteasy-core-spi/4.4.2.Final/resteasy-core-spi-4.4.2.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/eclipse/microprofile/config/microprofile-config-api/1.3/microprofile-config-api-1.3.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-core/1.2.0.Final/quarkus-core-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/inject/jakarta.inject-api/1.0/jakarta.inject-api-1.0.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/smallrye/config/smallrye-config/1.5.1/smallrye-config-1.5.1.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/io/smallrye/config/smallrye-config-common/1.5.1/smallrye-config-common-1.5.1.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logmanager/jboss-logmanager-embedded/1.0.4/jboss-logmanager-embedded-1.0.4.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logging/jboss-logging-annotations/2.1.0.Final/jboss-logging-annotations-2.1.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/threads/jboss-threads/3.0.0.Final/jboss-threads-3.0.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/slf4j/slf4j-jboss-logging/1.2.0.Final/slf4j-jboss-logging-1.2.0.Final.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/graalvm/sdk/graal-sdk/19.2.1/graal-sdk-19.2.1.jar, /home/heike/projekte/repositories/mvn_repo_2020-03/org/wildfly/common/wildfly-common/1.5.0.Final-format-001/wildfly-common-1.5.0.Final-format-001.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/src/main/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) encoding = UTF-8
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) failOnWarning = false
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile {execution: null}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes
+[DEBUG]   (f) parameters = true
+[DEBUG]   (f) project = MavenProject: de.egladil.web:quarkus-eclipse-reproducer:1.0.0-SNAPSHOT @ /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/pom.xml
+[DEBUG]   (f) projectArtifact = de.egladil.web:quarkus-eclipse-reproducer:jar:1.0.0-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@75e27856
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.8
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (s) target = 1.8
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Adding /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/generated-sources/annotations to compile source roots:
+  /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/src/main/java
+[DEBUG] New compile source roots:
+  /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/src/main/java
+  /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/src/main/java/de/egladil/web/ExampleResource.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/de/egladil/web/own-artifact/1.0.0/own-artifact-1.0.0.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/slf4j/slf4j-api/1.7.29/slf4j-api-1.7.29.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy/1.2.0.Final/quarkus-resteasy-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-vertx-http/1.2.0.Final/quarkus-vertx-http-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/security/quarkus-security/1.0.1.Final/quarkus-security-1.0.1.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/enterprise/jakarta.enterprise.cdi-api/2.0.2/jakarta.enterprise.cdi-api-2.0.2.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/el/jakarta.el-api/3.0.3/jakarta.el-api-3.0.3.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/interceptor/jakarta.interceptor-api/1.2.5/jakarta.interceptor-api-1.2.5.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-vertx-core/1.2.0.Final/quarkus-vertx-core-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-netty/1.2.0.Final/quarkus-netty-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec/4.1.42.Final/netty-codec-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-handler/4.1.42.Final/netty-handler-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-core/3.8.4/vertx-core-3.8.4.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-common/4.1.42.Final/netty-common-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-buffer/4.1.42.Final/netty-buffer-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-transport/4.1.42.Final/netty-transport-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-handler-proxy/4.1.42.Final/netty-handler-proxy-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-socks/4.1.42.Final/netty-codec-socks-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-http/4.1.42.Final/netty-codec-http-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-http2/4.1.42.Final/netty-codec-http2-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-resolver/4.1.42.Final/netty-resolver-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-resolver-dns/4.1.42.Final/netty-resolver-dns-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-dns/4.1.42.Final/netty-codec-dns-4.1.42.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/com/fasterxml/jackson/core/jackson-core/2.10.2/jackson-core-2.10.2.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-web/3.8.4/vertx-web-3.8.4.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-web-common/3.8.4/vertx-web-common-3.8.4.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-auth-common/3.8.4/vertx-auth-common-3.8.4.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-bridge-common/3.8.4/vertx-bridge-common-3.8.4.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy-server-common/1.2.0.Final/quarkus-resteasy-server-common-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-arc/1.2.0.Final/quarkus-arc-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/arc/arc/1.2.0.Final/arc-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/eclipse/microprofile/context-propagation/microprofile-context-propagation-api/1.0.1/microprofile-context-propagation-api-1.0.1.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy-common/1.2.0.Final/quarkus-resteasy-common-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/resteasy/resteasy-core/4.4.2.Final/resteasy-core-4.4.2.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/2.0.1.Final/jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/spec/javax/xml/bind/jboss-jaxb-api_2.3_spec/2.0.0.Final/jboss-jaxb-api_2.3_spec-2.0.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/resteasy/resteasy-core-spi/4.4.2.Final/resteasy-core-spi-4.4.2.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/eclipse/microprofile/config/microprofile-config-api/1.3/microprofile-config-api-1.3.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-core/1.2.0.Final/quarkus-core-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/inject/jakarta.inject-api/1.0/jakarta.inject-api-1.0.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/smallrye/config/smallrye-config/1.5.1/smallrye-config-1.5.1.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/io/smallrye/config/smallrye-config-common/1.5.1/smallrye-config-common-1.5.1.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logmanager/jboss-logmanager-embedded/1.0.4/jboss-logmanager-embedded-1.0.4.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logging/jboss-logging-annotations/2.1.0.Final/jboss-logging-annotations-2.1.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/threads/jboss-threads/3.0.0.Final/jboss-threads-3.0.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/slf4j/slf4j-jboss-logging/1.2.0.Final/slf4j-jboss-logging-1.2.0.Final.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/graalvm/sdk/graal-sdk/19.2.1/graal-sdk-19.2.1.jar
+[DEBUG]  /home/heike/projekte/repositories/mvn_repo_2020-03/org/wildfly/common/wildfly-common/1.5.0.Final-format-001/wildfly-common-1.5.0.Final-format-001.jar
+[DEBUG] Source roots:
+[DEBUG]  /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/src/main/java
+[DEBUG]  /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/generated-sources/annotations
+[DEBUG] Command line options:
+[DEBUG] -d /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes -classpath /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes:/home/heike/projekte/repositories/mvn_repo_2020-03/de/egladil/web/own-artifact/1.0.0/own-artifact-1.0.0.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/apache/commons/commons-lang3/3.9/commons-lang3-3.9.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/slf4j/slf4j-api/1.7.29/slf4j-api-1.7.29.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy/1.2.0.Final/quarkus-resteasy-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-vertx-http/1.2.0.Final/quarkus-vertx-http-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/security/quarkus-security/1.0.1.Final/quarkus-security-1.0.1.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/enterprise/jakarta.enterprise.cdi-api/2.0.2/jakarta.enterprise.cdi-api-2.0.2.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/el/jakarta.el-api/3.0.3/jakarta.el-api-3.0.3.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/interceptor/jakarta.interceptor-api/1.2.5/jakarta.interceptor-api-1.2.5.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-vertx-core/1.2.0.Final/quarkus-vertx-core-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-netty/1.2.0.Final/quarkus-netty-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec/4.1.42.Final/netty-codec-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-handler/4.1.42.Final/netty-handler-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-core/3.8.4/vertx-core-3.8.4.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-common/4.1.42.Final/netty-common-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-buffer/4.1.42.Final/netty-buffer-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-transport/4.1.42.Final/netty-transport-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-handler-proxy/4.1.42.Final/netty-handler-proxy-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-socks/4.1.42.Final/netty-codec-socks-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-http/4.1.42.Final/netty-codec-http-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-http2/4.1.42.Final/netty-codec-http2-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-resolver/4.1.42.Final/netty-resolver-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-resolver-dns/4.1.42.Final/netty-resolver-dns-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/netty/netty-codec-dns/4.1.42.Final/netty-codec-dns-4.1.42.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/com/fasterxml/jackson/core/jackson-core/2.10.2/jackson-core-2.10.2.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-web/3.8.4/vertx-web-3.8.4.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-web-common/3.8.4/vertx-web-common-3.8.4.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-auth-common/3.8.4/vertx-auth-common-3.8.4.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/vertx/vertx-bridge-common/3.8.4/vertx-bridge-common-3.8.4.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy-server-common/1.2.0.Final/quarkus-resteasy-server-common-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-arc/1.2.0.Final/quarkus-arc-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/arc/arc/1.2.0.Final/arc-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/transaction/jakarta.transaction-api/1.3.3/jakarta.transaction-api-1.3.3.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/eclipse/microprofile/context-propagation/microprofile-context-propagation-api/1.0.1/microprofile-context-propagation-api-1.0.1.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-resteasy-common/1.2.0.Final/quarkus-resteasy-common-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/resteasy/resteasy-core/4.4.2.Final/resteasy-core-4.4.2.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/spec/javax/ws/rs/jboss-jaxrs-api_2.1_spec/2.0.1.Final/jboss-jaxrs-api_2.1_spec-2.0.1.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/spec/javax/xml/bind/jboss-jaxb-api_2.3_spec/2.0.0.Final/jboss-jaxb-api_2.3_spec-2.0.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/resteasy/resteasy-core-spi/4.4.2.Final/resteasy-core-spi-4.4.2.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/eclipse/microprofile/config/microprofile-config-api/1.3/microprofile-config-api-1.3.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/quarkus/quarkus-core/1.2.0.Final/quarkus-core-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/jakarta/inject/jakarta.inject-api/1.0/jakarta.inject-api-1.0.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/smallrye/config/smallrye-config/1.5.1/smallrye-config-1.5.1.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/io/smallrye/config/smallrye-config-common/1.5.1/smallrye-config-common-1.5.1.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logmanager/jboss-logmanager-embedded/1.0.4/jboss-logmanager-embedded-1.0.4.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/logging/jboss-logging-annotations/2.1.0.Final/jboss-logging-annotations-2.1.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/threads/jboss-threads/3.0.0.Final/jboss-threads-3.0.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/jboss/slf4j/slf4j-jboss-logging/1.2.0.Final/slf4j-jboss-logging-1.2.0.Final.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/graalvm/sdk/graal-sdk/19.2.1/graal-sdk-19.2.1.jar:/home/heike/projekte/repositories/mvn_repo_2020-03/org/wildfly/common/wildfly-common/1.5.0.Final-format-001/wildfly-common-1.5.0.Final-format-001.jar: -sourcepath /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/src/main/java:/home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/generated-sources/annotations: -s /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/generated-sources/annotations -g -parameters -nowarn -target 1.8 -source 1.8 -encoding UTF-8
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 1 source file to /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[DEBUG] Using javaTool: /usr/lib/jvm/jdk-11.0.2/bin/java
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=223157, ConflictMarker.markTime=68609, ConflictMarker.nodeCount=183, ConflictIdSorter.graphTime=91575, ConflictIdSorter.topsortTime=47795, ConflictIdSorter.conflictIdCount=55, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1173692, ConflictResolver.conflictItemCount=134, DefaultDependencyCollector.collectTime=4517942, DefaultDependencyCollector.transformTime=1653090}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=404933, ConflictMarker.markTime=180873, ConflictMarker.nodeCount=469, ConflictIdSorter.graphTime=176557, ConflictIdSorter.topsortTime=106655, ConflictIdSorter.conflictIdCount=127, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5307145, ConflictResolver.conflictItemCount=327, DefaultDependencyCollector.collectTime=66858937, DefaultDependencyCollector.transformTime=6232244}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=243790, ConflictMarker.markTime=154764, ConflictMarker.nodeCount=335, ConflictIdSorter.graphTime=157245, ConflictIdSorter.topsortTime=75744, ConflictIdSorter.conflictIdCount=104, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=3478566, ConflictResolver.conflictItemCount=273, DefaultDependencyCollector.collectTime=5594649, DefaultDependencyCollector.transformTime=4173976}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=133990, ConflictMarker.markTime=82408, ConflictMarker.nodeCount=223, ConflictIdSorter.graphTime=73788, ConflictIdSorter.topsortTime=53145, ConflictIdSorter.conflictIdCount=72, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1580594, ConflictResolver.conflictItemCount=173, DefaultDependencyCollector.collectTime=3170691, DefaultDependencyCollector.transformTime=1943159}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=176298, ConflictMarker.markTime=104698, ConflictMarker.nodeCount=319, ConflictIdSorter.graphTime=104476, ConflictIdSorter.topsortTime=61421, ConflictIdSorter.conflictIdCount=96, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2496388, ConflictResolver.conflictItemCount=257, DefaultDependencyCollector.collectTime=3554126, DefaultDependencyCollector.transformTime=2963783}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=148320, ConflictMarker.markTime=93847, ConflictMarker.nodeCount=258, ConflictIdSorter.graphTime=80972, ConflictIdSorter.topsortTime=53480, ConflictIdSorter.conflictIdCount=86, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2016347, ConflictResolver.conflictItemCount=208, DefaultDependencyCollector.collectTime=2901286, DefaultDependencyCollector.transformTime=2412546}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=174673, ConflictMarker.markTime=103444, ConflictMarker.nodeCount=277, ConflictIdSorter.graphTime=91851, ConflictIdSorter.topsortTime=58677, ConflictIdSorter.conflictIdCount=91, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=2255340, ConflictResolver.conflictItemCount=223, DefaultDependencyCollector.collectTime=3399293, DefaultDependencyCollector.transformTime=2706563}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=143247, ConflictMarker.markTime=80195, ConflictMarker.nodeCount=239, ConflictIdSorter.graphTime=71802, ConflictIdSorter.topsortTime=48920, ConflictIdSorter.conflictIdCount=78, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1662339, ConflictResolver.conflictItemCount=189, DefaultDependencyCollector.collectTime=2694019, DefaultDependencyCollector.transformTime=2028331}
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=143529, ConflictMarker.markTime=86144, ConflictMarker.nodeCount=267, ConflictIdSorter.graphTime=76609, ConflictIdSorter.topsortTime=58478, ConflictIdSorter.conflictIdCount=88, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1976229, ConflictResolver.conflictItemCount=213, DefaultDependencyCollector.collectTime=3203538, DefaultDependencyCollector.transformTime=2360749}
+[DEBUG] Executable jar: /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/quarkus-eclipse-reproducer-dev.jar
+[DEBUG] Launching JVM with command line: /usr/lib/jvm/jdk-11.0.2/bin/java -XX:TieredStopAtLevel=1 -Xverify:none -Xdebug -Xrunjdwp:transport=dt_socket,address=5005,server=y,suspend=n -Djava.util.logging.manager=org.jboss.logmanager.LogManager -jar /home/heike/git/quarkus-eclipse-reproducer/quarkus-hello/target/quarkus-eclipse-reproducer-dev.jar
+Listening for transport dt_socket at address: 5005
+2020-03-18 15:43:54,488 INFO  [io.quarkus] (main) quarkus-eclipse-reproducer 1.0.0-SNAPSHOT (running on Quarkus 1.2.0.Final) started in 1.125s. Listening on: http://0.0.0.0:8080
+2020-03-18 15:43:54,508 INFO  [io.quarkus] (main) Profile dev activated. Live Coding activated.
+2020-03-18 15:43:54,508 INFO  [io.quarkus] (main) Installed features: [cdi, resteasy]
