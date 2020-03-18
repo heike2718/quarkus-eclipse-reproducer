@@ -32,6 +32,11 @@ After cloning the repository run either inside eclipse or on the command line
 
 This installes a dependency for quarkus-eclipse-reproducer not deployed on maven central to your local repository
 
+__Check if quarkus-hello starts fine from the command line__
+
+	cd quarkus-hello
+	mvn clean quarkus:dev
+
 ## Steps to reproduce
 
 Import quarkus-eclipse-reproducer into eclipse.
@@ -40,7 +45,7 @@ Configure a new maven run configuration with goal
 
 	clean quarkus:dev
 
-Start this configuration
+Start this run configuration.
 
 ## Error
 
