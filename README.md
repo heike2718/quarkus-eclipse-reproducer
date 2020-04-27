@@ -1,8 +1,6 @@
 # quarkus-eclipse-reproducer project
 
-# 2. Defining the http root path broken with Quarkus 1.4.0.Final
-
-## Problem
+### 2. Defining the http root path broken with Quarkus 1.4.0.Final
 
 With Quarkus <= 1.3.2.Final it was possible to define the http root in two ways:
 
@@ -21,11 +19,11 @@ __Configuring the root path with the @ApplicationPath-Anntotation in QuarkusEcli
 [stack trace 2](./config-root-in-application-class.txt)
 
 
-# 1. reproduce Eclipse Maven Settings issue (fixed now)
+### 1. reproduce Eclipse Maven Settings issue (fixed now)
 
 [Issue #7932](https://github.com/quarkusio/quarkus/issues/7932) with quarkus-1.3.0-Final running in eclipse
 
-## Update 20.04.2020
+__Update 20.04.2020__
 
 The issue could be resolved by restoring the default maven settings.
 
