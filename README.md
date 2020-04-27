@@ -11,12 +11,12 @@ With Quarkus <= 1.3.2.Final it was possible to define the http root in two ways:
 
 This reproducer shows that neither of the two ways works any longer starting with to Quarkus version 1.4.0.Final.
 
-__Configuring the root path in aplication.properties__ (while uncommending the @ApplicationPath-Anntotation  in QuarkusEclipseApplication) leads to the following error on startup:
+__Configuring the root path in aplication.properties__ (while uncommenting the @ApplicationPath-Anntotation  in QuarkusEclipseApplication) leads to the following error on startup:
 
 [stack trace 1](./config-root-in-application-properties.txt)
 
 
-__Configuring the root path with the @ApplicationPath-Anntotation in QuarkusEclipseApplication__ (while uncommending quarkus.http.root-path in application.properties) leads to the following error on startup:
+__Configuring the root path with the @ApplicationPath-Anntotation in QuarkusEclipseApplication__ (while uncommenting quarkus.http.root-path in application.properties) leads to the following error on startup:
 
 [stack trace 2](./config-root-in-application-class.txt)
 
