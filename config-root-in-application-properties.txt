@@ -1,0 +1,9 @@
+2020-04-27 20:17:12,938 ERROR [io.qua.dep.dev.DevModeMain] (main) Failed to start Quarkus: java.lang.AbstractMethodError: Receiver class io.quarkus.runner.bootstrap.StartupActionImpl does not define or inherit an implementation of the resolved method abstract runMainClass([Ljava/lang/String;)Lio/quarkus/bootstrap/app/RunningQuarkusApplication; of interface io.quarkus.bootstrap.app.StartupAction.
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:86)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:265)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:40)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:129)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:82)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:116)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:56)
+
