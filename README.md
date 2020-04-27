@@ -25,10 +25,10 @@ __Reproduce it__
 with playing all 4 possibilities:
 
 * Quarkus version 1.3.2.Final - root-path in [application.properties](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/resources/application.properties)
-* Quarkus version 1.3.2.Final - root-path in ApplicationPath-Annotation ([class](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/java/de/egladil/web/QuarkusEclipseApplication.java)
+* Quarkus version 1.3.2.Final - root-path in ApplicationPath-Annotation [class](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/java/de/egladil/web/QuarkusEclipseApplication.java)
 
 * Quarkus version 1.4.1.Final - root-path in [application.properties](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/resources/application.properties)
-* Quarkus version 1.4.1.Final - root-path in ApplicationPath-Annotation ([class](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/java/de/egladil/web/QuarkusEclipseApplication.java)
+* Quarkus version 1.4.1.Final - root-path in ApplicationPath-Annotation [class](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/java/de/egladil/web/QuarkusEclipseApplication.java)
 
 
 ### 1. reproduce Eclipse Maven Settings issue (fixed now)
