@@ -2,12 +2,14 @@
 
 ### 2. Defining the http root path broken with Quarkus 1.4.0.Final
 
+[Issue #8888](https://github.com/quarkusio/quarkus/issues/8888)
+
 With Quarkus <= 1.3.2.Final it was possible to define the http root in two ways:
 
 * define quarkus.http.root-path in application.properties
-* Add a Subclass of javax.ws.rs.core.Application and annotating it with javax.ws.rs.ApplicationPath
+* add a subclass of javax.ws.rs.core.Application and annotating it with javax.ws.rs.ApplicationPath
 
-This reproducer shows that neither of the two ways works any longer when switching to Quarkus 1.4.0.Final / 1.4.1.Final.
+This reproducer shows that neither of the two ways works any longer starting with to Quarkus version 1.4.0.Final.
 
 __Configuring the root path in aplication.properties__ (while uncommending the @ApplicationPath-Anntotation  in QuarkusEclipseApplication) leads to the following error on startup:
 
@@ -17,6 +19,16 @@ __Configuring the root path in aplication.properties__ (while uncommending the @
 __Configuring the root path with the @ApplicationPath-Anntotation in QuarkusEclipseApplication__ (while uncommending quarkus.http.root-path in application.properties) leads to the following error on startup:
 
 [stack trace 2](./config-root-in-application-class.txt)
+
+__Reproduce it__
+
+with playing all 4 possibilities:
+
+* Quarkus version 1.3.2.Final - root-path in [application.properties](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/resources/application.properties)
+* Quarkus version 1.3.2.Final - root-path in ApplicationPath-Annotation ([class](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/java/de/egladil/web/QuarkusEclipseApplication.java)
+
+* Quarkus version 1.4.1.Final - root-path in [application.properties](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/resources/application.properties)
+* Quarkus version 1.4.1.Final - root-path in ApplicationPath-Annotation ([class](https://github.com/heike2718/quarkus-eclipse-reproducer/blob/master/quarkus-hello/src/main/java/de/egladil/web/QuarkusEclipseApplication.java)
 
 
 ### 1. reproduce Eclipse Maven Settings issue (fixed now)
